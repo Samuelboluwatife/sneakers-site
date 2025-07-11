@@ -1,0 +1,239 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+header .header-container{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    max-width: 80%;
+    margin: 0 auto;
+    box-shadow: -1px 10px 5px -6px rgba(242, 241, 241, 0.985);
+}
+.header-container .menu-logo {
+    display: flex;
+    align-items: center;
+}
+.header-container .menu-logo .logo {
+    display: flex;
+    align-items: center;
+}
+.menu-logo .menus{
+    margin-left: 20px;
+}
+.menu-logo h1{
+    margin: 0;
+    font-size: 20px;
+}
+.menu-logo .menus a{
+    text-decoration: none;
+    font-size: 12px;
+    color:#79797b;
+    margin-left: 10px;
+}
+.header-container .buttons{
+    display: flex;
+    align-items: center;
+}
+.header-container .buttons #user-image{
+    margin-left: 22px;
+    border-radius: 50%;
+}
+.hero-section .hero-container{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    padding: 30px;
+}
+.hero-container .display-image .main-image{
+    width: 300px;
+    height:300px;
+    border-radius: 10px;
+    background-image: url(/images/image-product-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.hero-container .display-image #items{
+    border-radius:10px;
+    width: 60px;
+    height: 60px;
+}
+.hero-container .display-image .others {
+   display: flex;
+   justify-content: space-between;
+   margin-top: 20px;
+}
+ .display-image .others #hovered {
+  border-radius:10px;
+  width: 60px;
+  height: 60px;
+  opacity:0.5;
+}
+.hero-container .text-section{
+    margin-left: 60px;
+    padding: 30px;
+    
+}
+.text-section .title h5{
+    font-weight: 500;
+    font-size:10px;
+}
+.text-section .title #heading1{
+    margin: 0;
+    font-size: 30px;
+}
+.text-section .title #heading2{
+    margin: 0;
+    font-size: 30px;
+}
+.text-section .paragraph p{
+    font-size: 12px;
+    color: #79797b;
+}
+.text-section .price-section{
+    display: flex;
+    margin-top: 30px;
+}
+.text-section .price-section h3{
+    margin: 0;
+}
+.text-section .price-section button{
+    border: none;
+    padding:3px 5px;
+    background: black;
+    color: white;
+    margin-left: 20px;
+    border-radius: 5px;
+}
+.text-section .paragraph .discount{
+    display: flex;
+    align-items: center;
+}
+.text-section .paragraph #price{
+    text-decoration: line-through;
+    margin-top:2px;
+    color: grey;
+    font-weight: 600;
+}
+.text-section .buttons{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+.text-section .buttons .btn1{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    background-color:#f5f7fc;
+    border-radius: 5px;
+}
+ .buttons .btn1 p{
+    margin: 0px 20px;
+    font-size: 14px;
+    font-weight: bold;
+ }
+.text-section .buttons .btn2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 30px;
+    background-color:#ff7500;
+    width: 180px;
+    padding:10px 10px;
+    border-radius:5px;
+}
+
+span{
+    margin-left:10px;
+}
+
+
+
+/*responsiveness*/
+@media (max-width:992px) {
+    .menu-logo .menus{
+    display: none;
+}
+.menu-logo h1{
+   margin-left: 10px;
+}
+header .header-container{
+    display: flex;
+    justify-content:space-between;
+    max-width: 100%;
+    box-shadow: -1px 10px 5px -6px rgba(242, 241, 241, 0.985);
+}
+.hero-container .display-image {
+   display: none;
+}
+.hero-section .hero-container{
+    display: flex;
+   flex-direction: column;
+   padding: 0;
+   width: 100%;
+}
+.hero-container .text-section{
+   margin: 0;
+   padding:20px;  
+}
+.text-section .paragraph p{
+    font-size: 12px;
+    line-height: 20px;
+    color: #79797b;
+}
+.hero-section .banner-container{
+   background-image: url(./images/image-product-1.jpg);
+   background-size: cover;
+   width: 100%;
+   height:300px;   
+}
+.text-section .buttons{
+    display: flex;
+    flex-direction: column;
+}
+.text-section .buttons .btn1{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 300px;
+    padding:20px;
+    background-color:#dfe1e7;
+    border-radius: 5px;
+}
+.text-section .buttons .btn2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    margin-top: 20px;
+    background-color:#ff7500;
+    width: 300px;
+    padding: 20px;;
+    border-radius:5px;
+}
+.text-section .price-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+.text-section .price-section .discount{
+    display: flex;
+    align-items: center;
+    font-size:26px;
+}
+}
+/*min-width=993px*/
+@media (min-width:993px) {
+ .menu-logo .logo svg {
+  display: none;
+
+}
+.text-section .price-section{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+}
