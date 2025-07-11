@@ -184,6 +184,10 @@ header .header-container{
     color: #79797b;
 }
 .hero-section .banner-container{
+   display: flex;
+   justify-content: space-between;
+   padding: 0px 5px;
+   align-items: center;
    background-image: url(./images/image-product-1.jpg);
    background-size: cover;
    width: 100%;
@@ -230,6 +234,9 @@ header .header-container{
  .menu-logo .logo svg {
   display: none;
 
+}
+.hero-section .banner-container{
+  display: none;
 }
 .text-section .price-section{
     display: flex;
